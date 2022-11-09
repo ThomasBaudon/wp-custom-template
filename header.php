@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -13,6 +12,20 @@
 <body <?php body_class(); ?>>
     
     <?php wp_body_open(); ?>
+
+    <?php 
+        if ( is_user_logged_in() ):
+            $current_user = wp_get_current_user(); 
+        ?>
+            <p>
+                <?php echo $current_user->user_firstname; ?>
+                <a href="<?php echo wp_logout_url(); ?>"> Déconnexion </a>
+            </p>
+        <?php else: ?>
+            <p>
+                <a href="<?php echo wp_login_url(); ?>"> Connexion </a>
+            </p>
+    <?php endif; ?>
 
     <header class="header">
         <a href="<?php echo home_url( '/' ); ?>">

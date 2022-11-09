@@ -29,6 +29,21 @@ header nav .site__header__menu li a {
   color: black;
 }
 
+.container-page {
+  width: 75vw;
+  margin: 0 auto;
+}
+
+article {
+  width: 70vw;
+  margin: 0 auto;
+}
+article h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
 html {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
