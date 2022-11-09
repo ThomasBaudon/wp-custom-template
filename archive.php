@@ -23,5 +23,6 @@
 
 	<?php endwhile; endif; ?>
 
+<?php get_template_part( './parts/newsletter' ); ?>
 
 <?php get_footer(); ?>
