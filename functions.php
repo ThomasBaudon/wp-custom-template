@@ -17,3 +17,9 @@ function additional_custom_styles() {
     wp_enqueue_style( 'customStyle', get_template_directory_uri() . '/css/style.css' ); 
 }
 add_action( 'wp_enqueue_scripts', 'additional_custom_styles' );
+
+function thomas_remove_menu_pages() {
+	remove_menu_page( 'tools.php' );
+    remove_menu_page( 'edit-comments.php' );
+}
+add_action( 'admin_menu', 'thomas_remove_menu_pages' );

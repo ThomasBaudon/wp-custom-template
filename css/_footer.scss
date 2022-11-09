@@ -1,21 +1,17 @@
-header{
+footer{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: rgb(34, 34, 34);
     padding: 1rem;
+    margin-top: 2rem;
 
-
-    #logo{
-        width: 4rem;
-    }
-    
     nav{
         width: 80%;
         .site__header__menu{
             display: flex;
-            justify-content: flex-end;
-            align-items: flex-start;
+            justify-content: center;
+            align-items: center;
             list-style: none;
             ul{
                 list-style: none;

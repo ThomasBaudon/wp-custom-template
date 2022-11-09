@@ -2,7 +2,9 @@
 header {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
+  background-color: rgb(34, 34, 34);
+  padding: 1rem;
 }
 header #logo {
   width: 4rem;
@@ -26,7 +28,37 @@ header nav .site__header__menu li {
 header nav .site__header__menu li a {
   text-transform: uppercase;
   text-decoration: none;
-  color: black;
+  color: white;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(34, 34, 34);
+  padding: 1rem;
+  margin-top: 2rem;
+}
+footer nav {
+  width: 80%;
+}
+footer nav .site__header__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+footer nav .site__header__menu ul {
+  list-style: none;
+}
+footer nav .site__header__menu li {
+  text-decoration: none;
+  margin-left: 1rem;
+}
+footer nav .site__header__menu li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
 }
 
 .container-page {
@@ -47,4 +79,9 @@ article h2 {
 html {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }/*# sourceMappingURL=style.css.map */

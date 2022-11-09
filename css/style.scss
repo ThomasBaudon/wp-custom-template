@@ -3,6 +3,7 @@
 
 // STYLES
 @import "_nav.scss";
+@import "_footer.scss";
 @import "_front-page.scss";
 @import "_articles.scss";
 
@@ -10,4 +11,9 @@
  html{
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
+ }
+
+ body{
+    margin: 0;
+    padding: 0;
  }
