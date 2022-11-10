@@ -13,7 +13,7 @@
     
     <?php wp_body_open(); ?>
 
-    <?php 
+    <!-- <?php 
         if ( is_user_logged_in() ):
             $current_user = wp_get_current_user(); 
         ?>
@@ -25,7 +25,7 @@
             <p>
                 <a href="<?php echo wp_login_url(); ?>"> Connexion </a>
             </p>
-    <?php endif; ?>
+    <?php endif; ?> -->
 
     <header class="header">
         <a href="<?php echo home_url( '/' ); ?>">

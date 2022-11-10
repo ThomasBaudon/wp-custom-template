@@ -23,3 +23,12 @@ function thomas_remove_menu_pages() {
     remove_menu_page( 'edit-comments.php' );
 }
 add_action( 'admin_menu', 'thomas_remove_menu_pages' );
+
+register_sidebar( array(
+    'id' => 'blog-sidebar',
+    'name' => 'Blog',
+    'before_widget'  => '<div class="site__sidebar__widget %2$s">',
+    'after_widget'  => '</div>',
+    'before_title' => '<p class="site__sidebar__widget__title">',
+    'after_title' => '</p>',
+  ) );
