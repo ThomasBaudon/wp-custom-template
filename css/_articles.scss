@@ -5,11 +5,13 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    column-gap: 2rem;
+
     width: 70vw;
 
-    column-gap: 2rem;
     main{
         width: 70%;
+        overflow: hidden;
         article{
             width: 100%;
             margin: 0 auto;

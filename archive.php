@@ -44,6 +44,7 @@
 				<br>
 
 			<?php endwhile; endif; ?>
+			<?php posts_nav_link(); ?>
 			</main>
 
 			<aside class="site__sidebar">

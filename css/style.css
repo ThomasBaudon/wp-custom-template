@@ -70,12 +70,13 @@ footer nav .site__header__menu li a {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 70vw;
   -moz-column-gap: 2rem;
        column-gap: 2rem;
+  width: 70vw;
 }
 .site__blog main {
   width: 70%;
+  overflow: hidden;
 }
 .site__blog main article {
   width: 100%;
@@ -91,11 +92,9 @@ footer nav .site__header__menu li a {
   background-color: rgb(244, 244, 244);
 }
 
-.bg {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
 .bg--gris {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
   background-color: gray;
 }
 
