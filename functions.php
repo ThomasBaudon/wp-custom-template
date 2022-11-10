@@ -11,6 +11,22 @@ register_nav_menus( array(
 	'footer' => 'Bas de page',
 ) );
 
+register_sidebar( array(
+    'id' => 'blog-sidebar',
+    'name' => 'Blog',
+    'before_widget'  => '<div class="site__sidebar__widget %2$s">',
+    'after_widget'  => '</div>',
+    'before_title' => '<p class="site__sidebar__widget__title">',
+    'after_title' => '</p>',
+  ) );
+
+/* REMOVE */
+remove_action( 'wp_head', 'print_emoji_detection_script', 7 ); 
+remove_action( 'admin_print_scripts', 'print_emoji_detection_script' ); 
+remove_action( 'wp_print_styles', 'print_emoji_styles' ); 
+remove_action( 'admin_print_styles', 'print_emoji_styles' );
+
+/* FUNCTIONS */
 function additional_custom_styles() {
 
     /*Enqueue The Styles*/
@@ -23,12 +39,3 @@ function thomas_remove_menu_pages() {
     remove_menu_page( 'edit-comments.php' );
 }
 add_action( 'admin_menu', 'thomas_remove_menu_pages' );
-
-register_sidebar( array(
-    'id' => 'blog-sidebar',
-    'name' => 'Blog',
-    'before_widget'  => '<div class="site__sidebar__widget %2$s">',
-    'after_widget'  => '</div>',
-    'before_title' => '<p class="site__sidebar__widget__title">',
-    'after_title' => '</p>',
-  ) );
