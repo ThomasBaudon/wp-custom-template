@@ -44,7 +44,8 @@
 				<br>
 
 			<?php endwhile; endif; ?>
-			<?php posts_nav_link(); ?>
+			<!-- PAGINATION -->
+			<?php the_posts_pagination(); ?>
 			</main>
 
 			<aside class="site__sidebar">

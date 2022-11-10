@@ -29,6 +29,15 @@
       
     </article>
   <?php endwhile; endif; ?>
+
+  <div class="site__navigation">
+	<div class="site__navigation__prev">
+		<?php previous_post_link( 'Article Précédent<br>%link' ); ?>
+    </div>
+    <div class="site__navigation__next">
+        <?php next_post_link( 'Article Suivant<br>%link' ); ?> 
+    </div>
+</div>
 </div>
 
 <div class="container-w100 bg--gris">
